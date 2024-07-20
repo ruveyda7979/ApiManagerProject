@@ -13,6 +13,11 @@ namespace Entities.Concrete
         public string Name { get; set; }
         public string Description { get; set; }
         public DateTime UploadDate { get; set; }
+        public int UserId { get; set; }  
 
+        public User User { get; set; }
+        public ICollection<ProjectJson> ProjectJsons { get; set; }
+        public ICollection<ProjectFile> ProjectFiles { get; set; }
+        public bool IsDeleted { get ; set ; }
     }
 }

@@ -10,5 +10,6 @@ namespace Core.Entities
     {
         public int Id { get; set; }
         public DateTime UploadDate { get; set; }
+        public bool IsDeleted { get; set; }
     }
 }

@@ -14,5 +14,7 @@ namespace Entities.Concrete
         public string Email { get; set; }
         public string Password { get; set; }
         public DateTime UploadDate { get; set; }
+        public List<Project> Projects { get; set; } = new(); // Bir kullanıcının projeleri
+        public bool IsDeleted { get; set ; }
     }
 }

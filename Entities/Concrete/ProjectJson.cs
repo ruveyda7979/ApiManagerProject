@@ -18,5 +18,8 @@ namespace Entities.Concrete
         public string SendPattern { get; set; }
         public string ReceivedPattern { get; set; }
         public DateTime UploadDate { get; set; }
+
+        public Project Project { get; set; }
+        public bool IsDeleted { get ; set ; }
     }
 }
